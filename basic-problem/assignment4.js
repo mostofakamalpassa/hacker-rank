@@ -48,3 +48,33 @@ function pandaCost(singaraQuantity, samuchaQuantity, jilapiQuntity){
 // console.log(pandaCost(1,1,1));
 // console.log(pandaCost(2,3,0));
 // console.log(pandaCost(2,3,4));
+//  console.log(pandaCost("2",3,4));
+//  console.log(pandaCost(-5,3,4));
+
+
+function picnicBudget(member){
+
+    let totalCollection = 0;
+
+    if(member<= 100){
+        totalCollection = member * 5000;
+    }
+
+    if(member> 100 && member <= 200){
+
+        let lessMember = member - 100;
+        totalCollection = 100 * 5000;
+        totalCollection +=  lessMember * 4000;
+    }
+
+    if(member > 200 ){
+        let lessMember = member - 200;
+        totalCollection = 100 * 5000;
+        totalCollection += 100 * 4000;
+        totalCollection += lessMember * 3000;
+    }
+
+    return totalCollection;
+}
+
+console.log(picnicBudget(205));
