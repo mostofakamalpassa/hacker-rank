@@ -3,10 +3,10 @@
 function anaToVori(ana){
 
     if(typeof ana != 'number'){
-        return "invalid input";
+        return "invalid input ?";
     }
     if(ana <0){
-        return "only positive input allow";
+        return "only positive input allow ?";
     }
     let vori = ana/16;
 
@@ -20,6 +20,14 @@ function anaToVori(ana){
 // problem 2 
 
 function pandaCost(singaraQuantity, samuchaQuantity, jilapiQuntity){
+
+    if(singaraQuantity < 0 || samuchaQuantity < 0 || jilapiQuntity < 0 ){
+        return "Nagitive Value can not allow ?";
+    }
+
+    if (typeof singaraQuantity != 'number' || typeof samuchaQuantity != 'number' || typeof jilapiQuntity != 'number'){
+        return "Number only allow ?";
+    }
 
 
     // 3 parameter price 
