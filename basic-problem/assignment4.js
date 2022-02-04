@@ -77,4 +77,43 @@ function picnicBudget(member){
     return totalCollection;
 }
 
-console.log(picnicBudget(205));
+// console.log(picnicBudget(205));
+// console.log(picnicBudget(100));
+// console.log(picnicBudget(200));
+
+
+// problem 4 
+
+function oddFriend(firndArray){
+
+ //  let oddLength = 0;
+
+    // cheack is array 
+    if( Array.isArray(firndArray) != true){
+        return " only array allow ? ";
+    }
+
+    // array evenry element iterations
+    for(let i = 0; i<firndArray.length; i++){
+    // cheack is every array element value string or not
+        if(typeof firndArray[i] != 'string'){
+           return "only string value allow ?";
+        }
+    }
+
+    // array evenry element iterations 
+    for(let i = 0; i<firndArray.length; i++){
+        // check first friends name odd number 
+        if(firndArray[i].length % 2 != 0){
+            return firndArray[i];
+        }
+    }
+}
+
+console.log(oddFriend(['kamala', 'jamala','mostofa', 'abc', 'cdefgh']));
+console.log(oddFriend([3334,'kamala', 'jamala','mostofa', 'abc', 'cdefgh']));
+console.log(oddFriend(555));
+console.log(oddFriend({}));
+console.log(oddFriend("kamal passa"));
+
+    
