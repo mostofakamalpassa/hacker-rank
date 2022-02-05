@@ -47,13 +47,19 @@ function pandaCost(singaraQuantity, samuchaQuantity, jilapiQuntity){
 
 // console.log(pandaCost(1,1,1));
 // console.log(pandaCost(2,3,0));
-// console.log(pandaCost(2,3,4));
+ //console.log(pandaCost(2,3,4));
 //  console.log(pandaCost("2",3,4));
 //  console.log(pandaCost(-5,3,4));
 
 
 function picnicBudget(member){
 
+    if(typeof member != 'number'){
+        return "Plase give valid number";
+    }
+    if(member <=0){
+        return "Nigative number are not allow";
+    }
     let totalCollection = 0;
 
     if(member<= 100){
@@ -77,9 +83,11 @@ function picnicBudget(member){
     return totalCollection;
 }
 
-// console.log(picnicBudget(205));
+ //console.log(picnicBudget(205));
 // console.log(picnicBudget(100));
 // console.log(picnicBudget(200));
+// console.log(picnicBudget("200"));
+ //console.log(picnicBudget(-5));
 
 
 // problem 4 
@@ -110,10 +118,10 @@ function oddFriend(firndArray){
     }
 }
 
-console.log(oddFriend(['kamala', 'jamala','mostofa', 'abc', 'cdefgh']));
-console.log(oddFriend([3334,'kamala', 'jamala','mostofa', 'abc', 'cdefgh']));
-console.log(oddFriend(555));
-console.log(oddFriend({}));
-console.log(oddFriend("kamal passa"));
+//console.log(oddFriend(['kamala', 'jamala','mostofa', 'abc', 'cdefgh']));
+// console.log(oddFriend([3334,'kamala', 'jamala','mostofa', 'abc', 'cdefgh']));
+// console.log(oddFriend(555));
+// console.log(oddFriend({}));
+// console.log(oddFriend("kamal passa"));
 
     
